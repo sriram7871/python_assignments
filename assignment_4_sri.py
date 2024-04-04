@@ -26,15 +26,16 @@ class Library_Mgmt:
             return 'invalid input'
         
         else:
-            match num:
+            
+             match num:
                 case 1:
                     return 'economics'
                 case 2:
                     return 'civics'
                 case 3:
                     return 'psychology' 
-             
-                 
+            
+                
     def borrow_book(self,book_name):              
         if book_name in self.books:
             index=self.books.index(book_name)
